@@ -1,0 +1,54 @@
+@import "fonts";
+
+@mixin borber-white {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: -3px;
+  z-index: 0;
+}
+
+@mixin figure ($color, $step:0) {
+  &:after,
+  &:before {
+    position: absolute;
+    content: "";
+    height: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+  }
+  &:after {
+    border-bottom: 169px solid $color;
+    border-left: 97px+$step/2 solid transparent;
+    border-right: 97px+$step/2 solid transparent;
+    @media only screen and (max-width: 1100px) {
+      border-left: 67px+$step solid transparent;
+      border-right: 67px+$step solid transparent;
+    }
+    @media only screen and (max-width: 770px) {
+      border-left: 51px+$step solid transparent;
+      border-right: 51px+$step solid transparent;
+    }
+  }
+
+  &:before {
+    border-bottom: 169px+6px+$step*2 solid #fff;
+    border-left: 100px+$step+$step/2 solid transparent;
+    border-right: 100px+$step+$step/2 solid transparent;
+    top: -3px - $step*2;
+    bottom: -3px;
+    left: -5px;
+    right: -5px;
+    @media only screen and (max-width: 1100px) {
+      border-left: 70px + $step*2 solid transparent;
+      border-right: 70px + $step*2 solid transparent;
+    }
+    @media only screen and (max-width: 770px) {
+      border-left: 54px+$step solid transparent;
+      border-right: 54px+$step solid transparent;
+    }
+  }
+}
