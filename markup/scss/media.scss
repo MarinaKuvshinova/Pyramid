@@ -3,11 +3,13 @@
     min-width: 320px;
   }
 }
+
 @media only screen and (max-width: 1100px) {
   .pyramid__container {
     max-width: 693px;
   }
 }
+
 @media only screen and (max-width: 770px) {
   html {
     font-size: 12px;
@@ -16,6 +18,7 @@
     max-width: 530px;
   }
 }
+
 @media only screen and (max-width: 630px) {
   .pyramid {
     padding: 20px;
@@ -91,6 +94,7 @@
     }
   }
 }
+
 @media only screen and (max-width: 400px) {
   .pyramid__container .row .col {
     width: 100%;

@@ -22,7 +22,6 @@
       display: block;
       max-width: 720px;
       margin: 0 auto 8px;
-
       &:nth-child(1) {
         font: 0.6em "ProximaNovaExtrabld", Arial, Helvetica, sans-serif;
       }
@@ -75,7 +74,6 @@
           left: -97px;
           transform: rotate(-73deg);
         }
-
         &:after{
           position: absolute;
           bottom: -24px;
@@ -91,7 +89,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        flex-wrap: wrap
+        flex-wrap: wrap;
+        width: 100%;
       }
 
       .col {
@@ -115,7 +114,6 @@
           margin: 0 auto 7px;
         }
       }
-
       &:nth-child(1) {
         color: #603620;
         padding: 37px 3% 5px 3%;
